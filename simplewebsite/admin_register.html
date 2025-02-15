@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <div class="register-container">
+        <h2>Register</h2>
+        <form action="admin_register.php" method="POST">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" required>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" name="confirm_password" required>
+            </div>
+
+            <div class="input-group">
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="middle_name">Middle Name:</label>
+                <input type="text" name="middle_name">
+            </div>
+
+            <div class="input-group">
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="address">Address:</label>
+                <textarea name="address" required></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="birthday">Birthday:</label>
+                <input type="date" name="birthday" required>
+            </div>
+
+            <div class="input-group">
+                <label for="gender">Gender:</label>
+                <select name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+</body>
+</html>
